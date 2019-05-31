@@ -1,0 +1,108 @@
+
+
+.box {
+    background-color: #e84610;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.box:hover {
+    animation: jump 0.5s forwards alternate ease-in-out infinite;
+}
+
+@keyframes jump {
+    from {
+        top: 0;
+    }
+    
+    to {
+        top: 200px;
+    }    
+        
+}
+
+.box2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #bada55;
+    display: inline-block;
+}
+
+.box2:hover {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition-property: width, height;
+    transition-duration: 2s;
+    animation: growing 0.5s forwards alternate ease-in-out infinite;
+
+}
+
+@keyframes growing {
+    from {
+        width: 100px;
+        height: 100px;
+    }
+    
+    to {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    background-image: url('https://gamepedia.cursecdn.com/zelda_gamepedia_en/thumb/7/70/ALBW_Triforce_Artwork.png/300px-ALBW_Triforce_Artwork.png?version=2631c5d3bf85e6a24f1c78427b098815');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.box3:hover {
+    animation: spin 1s forwards infinite ease-in-out;
+}
+
+
+@keyframes spin {
+    from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box4 {
+    width: 350px;
+    height: 100px;
+    background-color: #000;
+    display: inline-block;
+    margin: 10px;
+}
+
+.box4:hover {
+    animation: move 1s alternate infinite ease-in-out;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(100%);
+    }
+}
